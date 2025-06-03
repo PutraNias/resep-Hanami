@@ -1,14 +1,21 @@
-// Firebase configuration (ganti dengan config Anda dari Firebase Console)
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyD...",
-  authDomain: "your-project.firebaseapp.com",
-  projectId: "your-project",
-  storageBucket: "your-project.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "1:123456789:web:abcd1234"
+  apiKey: "AIzaSyDTYczJwTGXiq01NqDok_TJT2jP1frGYTY",
+  authDomain: "fir-config-d102b.firebaseapp.com",
+  projectId: "fir-config-d102b",
+  storageBucket: "fir-config-d102b.firebasestorage.app",
+  messagingSenderId: "339985470764",
+  appId: "1:339985470764:web:a03bd4d68e0c59bd84c889",
+  measurementId: "G-Q1K2GGCEP2"
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
-const storage = firebase.storage();
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
